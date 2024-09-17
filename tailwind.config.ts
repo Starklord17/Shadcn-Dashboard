@@ -1,5 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
 import type { Config } from "tailwindcss";
-const { FontFamily } = require("tailwindcss/defaultTheme"); // require xq el archivo se ejecuta en node.
 
 const config: Config = {
     darkMode: ["class"],
@@ -10,9 +10,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-			fontFamily: {
-				sans: ["var(--font-sans)", ...FontFamily.sans],
-			},
+  		fontFamily: {
+  			sans: ["var(--font-sans)", ...fontFamily.sans]
+  		},
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
@@ -63,6 +63,28 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },
