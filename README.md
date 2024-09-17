@@ -40,6 +40,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Shadcn
 
 - https://ui.shadcn.com/
+- https://manupa.dev/blog/anatomy-of-shadcn-ui
+- https://www.patterns.dev/react/hoc-pattern/
 
 ## Components
 
