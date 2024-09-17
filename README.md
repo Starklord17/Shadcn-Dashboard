@@ -40,3 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Shadcn
 
 - https://ui.shadcn.com/
+
+## Components
+
+- https://ui.shadcn.com/docs/components/accordion
