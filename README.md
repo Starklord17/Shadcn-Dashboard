@@ -48,3 +48,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/accordion
 - https://ui.shadcn.com/docs/components/alert
 - https://ui.shadcn.com/docs/components/alert-dialog
+- https://ui.shadcn.com/docs/components/badge
