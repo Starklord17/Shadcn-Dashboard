@@ -49,3 +49,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/alert
 - https://ui.shadcn.com/docs/components/alert-dialog
 - https://ui.shadcn.com/docs/components/badge
+- https://ui.shadcn.com/docs/components/calendar
+- https://ui.shadcn.com/docs/components/avatar
