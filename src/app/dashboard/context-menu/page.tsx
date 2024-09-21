@@ -40,7 +40,13 @@ export default function Page() {
             Forward
             <ContextMenuShortcut>⌘]</ContextMenuShortcut>
           </ContextMenuItem>
-          <ContextMenuItem inset>
+          <ContextMenuItem
+            inset
+            onClick={() => {
+              console.log("Reload button clicked");
+              router.refresh();
+            }}
+          >
             Reload
             <ContextMenuShortcut>⌘R</ContextMenuShortcut>
           </ContextMenuItem>
