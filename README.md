@@ -52,3 +52,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/calendar
 - https://ui.shadcn.com/docs/components/avatar
 - https://ui.shadcn.com/docs/components/card
+- https://ui.shadcn.com/docs/components/carousel
+- https://www.embla-carousel.com/get-started/react/
