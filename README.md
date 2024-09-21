@@ -56,3 +56,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://www.embla-carousel.com/get-started/react/
 - https://ui.shadcn.com/docs/components/checkbox
 - https://ui.shadcn.com/docs/components/command
+- https://ui.shadcn.com/docs/components/combobox
