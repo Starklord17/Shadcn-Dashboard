@@ -13,6 +13,7 @@ const links = [
   { name: "badge", href: "badge" },
   { name: "calendar", href: "calendar" },
   { name: "avatar", href: "avatar" },
+  { name: "card", href: "card" },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
@@ -107,7 +108,7 @@ export default function DashboardLayout({
               <Avatar>
                 <AvatarImage
                   src="https://github.com/shadcn.png"
-                  alt="@shadcn"
+                  alt="@shadcn" 
                 />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>

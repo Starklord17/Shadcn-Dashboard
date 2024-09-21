@@ -51,3 +51,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/badge
 - https://ui.shadcn.com/docs/components/calendar
 - https://ui.shadcn.com/docs/components/avatar
+- https://ui.shadcn.com/docs/components/card
