@@ -60,3 +60,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/context-menu
 - https://ui.shadcn.com/docs/components/menubar
 - https://ui.shadcn.com/docs/components/input-otp
+- https://ui.shadcn.com/docs/components/progress
