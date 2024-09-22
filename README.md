@@ -58,3 +58,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/command
 - https://ui.shadcn.com/docs/components/combobox
 - https://ui.shadcn.com/docs/components/context-menu
+- https://ui.shadcn.com/docs/components/menubar
