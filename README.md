@@ -66,3 +66,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/slider
 - https://ui.shadcn.com/docs/components/sonner
 - https://ui.shadcn.com/docs/components/toast
+- https://ui.shadcn.com/docs/components/tabs
