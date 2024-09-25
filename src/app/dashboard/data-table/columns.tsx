@@ -20,7 +20,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { toast } from "sonner";
-import { Checkbox } from "@/components/ui/checkbox"
+import { Checkbox } from "@/components/ui/checkbox";
+
+const myCustomFilterFn: FilterFn<Payment> = (
+  row: Row<Payment>,
+  columnId: string,
+  filterValue: string,
+  addMeta: (meta: any) => void
+) => {
+  filterValue = filterValue.toLowerCase();
+  const filterParts = filterValue.split(" ");
+  // console.log({filterParts});
+  const rowValues = `${row.original.email} ${row.original.clientName} ${row.original.status}`.toLowerCase();
+  // every: Determines whether all the members of an array satisfy the specified test.
+  return filterParts.every((part) => rowValues.includes(part));
+};
 
 const SortedIcon = ({ isSorted }: { isSorted: false | SortDirection }) => {
   if (isSorted === "asc") {
@@ -136,6 +150,7 @@ export const columns: ColumnDef<Payment>[] = [
 
   {
     accessorKey: "email",
+    filterFn: myCustomFilterFn,
     header: ({ column }) => {
       return (
         <Button
