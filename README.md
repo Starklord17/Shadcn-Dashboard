@@ -72,5 +72,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - https://ui.shadcn.com/docs/components/data-table
 - [React Example: Pagination Controlled](https://tanstack.com/table/latest/docs/framework/react/examples/pagination-controlled)
+- [Column Filtering Guide](https://tanstack.com/table/latest/docs/guide/column-filtering#filterfns)
 
 ---
