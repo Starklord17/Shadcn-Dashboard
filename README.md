@@ -81,3 +81,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://react-hook-form.com/docs/usecontroller
 - https://ui.shadcn.com/docs/components/radio-group#form
 - https://ui.shadcn.com/docs/components/date-picker#form
+- https://ui.shadcn.com/docs/components/switch#form

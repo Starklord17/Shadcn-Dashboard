@@ -5,6 +5,15 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Switch } from "@/components/ui/switch";
 import {
   Form,
   FormControl,
@@ -14,10 +23,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { CalendarIcon } from "@radix-ui/react-icons";
@@ -29,7 +34,12 @@ const formSchema = z.object({
   dateOfBirth: z.date({
     required_error: "A date of birth is required.",
   }),
-});
+  marketingEmails: z.boolean().default(false),
+})
+.refine((data) => data.marketingEmails === true, {
+  message: "You must agree to receive marketing emails.",
+  path: ["marketingEmails"],
+})
 
 export default function Page() {
   // 1. Define your form.
@@ -40,6 +50,8 @@ export default function Page() {
       email: "",
     },
   });
+
+  // console.log(form);
 
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
@@ -53,7 +65,7 @@ export default function Page() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="grid grid-cols-2 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
         >
           {/* UserName */}
           <FormField
@@ -163,6 +175,28 @@ export default function Page() {
                   Your date of birth is used to calculate your age.
                 </FormDescription>
                 <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          {/* Marketing Emails - Switch */}
+          <FormField
+            control={form.control}
+            name="marketingEmails"
+            render={({ field }) => (
+              <FormItem className="flex flex-row items-center justify-between rounded-lg border p-4 col-span-1 sm:col-span-2">
+                <div className="space-y-0.5">
+                  <FormLabel className="text-base">Marketing emails</FormLabel>
+                  <FormDescription>
+                    Receive emails about your account.
+                  </FormDescription>
+                </div>
+                <FormControl>
+                  <Switch
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
               </FormItem>
             )}
           />
