@@ -77,3 +77,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### Form
 
 - [Building forms with React Hook Form and Zod.](https://ui.shadcn.com/docs/components/form)
+- https://zod.dev/
+- https://react-hook-form.com/docs/usecontroller
