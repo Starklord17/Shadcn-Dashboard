@@ -82,3 +82,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - https://ui.shadcn.com/docs/components/radio-group#form
 - https://ui.shadcn.com/docs/components/date-picker#form
 - https://ui.shadcn.com/docs/components/switch#form
+
+### Dark mode - Themes
+
+- [Shadcn UI Theme Generator](https://gradient.page/tools/shadcn-ui-theme-generator)
+- https://ui.shadcn.com/themes
+- https://ui.shadcn.com/docs/dark-mode
