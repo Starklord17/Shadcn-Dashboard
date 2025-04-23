@@ -289,7 +289,7 @@ export default function DashboardLayout({
           </footer>
           <p className="text-center text-sm text-gray-500 my-10 print:hidden">
             &copy; 2019-{new Date().getFullYear()}{" "}
-            <a href="/https://ui.shadcn.com/" className="hover:underline" target="_blank">
+            <a href="https://ui.shadcn.com/" className="hover:underline" target="_blank">
               shadcn-ui
             </a>
             . OpenSource. Open Code.
